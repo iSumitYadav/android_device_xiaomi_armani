@@ -15,15 +15,25 @@
 #
 
 # $(error STEP 2 :: $(SRC_TARGET_DIR))
+
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# $(error STEP 5 :: $(PRODUCT_PROPERTY_OVERRIDES))
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/xiaomi/armani/device.mk)
+
+# $(error STEP 7 :: $(PRODUCT_AAPT_PREBUILT_DPI))
+
 $(call inherit-product-if-exists, vendor/xiaomi/armani/armani-vendor.mk)
+
+# $(error STEP 8 :: $(PRODUCT_PACKAGES))
 
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/aosp/config/common.mk)
+
+# $(warning STEP 10 :: $(PRODUCT_BRAND))
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := armani

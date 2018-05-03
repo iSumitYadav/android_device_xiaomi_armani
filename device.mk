@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+# $(error STEP 6 :: $(LOCAL_PATH))
+
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_AAPT_CONFIG := normal

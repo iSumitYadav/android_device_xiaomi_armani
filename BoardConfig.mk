@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+# $(warning STEP 13 :: BoardConfig.mk)
+
 LOCAL_PATH := device/xiaomi/armani
 
 # ANT+

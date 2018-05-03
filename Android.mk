@@ -13,8 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# $(error STEP 3? :: $(TARGET_DEVICE))
+
+# $(error STEP 11, First STEP after make cmd :: $(TARGET_DEVICE))
+
 LOCAL_PATH := $(call my-dir)
+
+# $(error STEP 12, STEP after BoarConfig after make cmd :: $(LOCAL_PATH))
 
 ifeq ($(TARGET_DEVICE),armani)
 
