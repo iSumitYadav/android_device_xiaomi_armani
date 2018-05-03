@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
+# $(error STEP 3? :: $(TARGET_DEVICE))
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),armani)

@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+# $(error STEP 2 :: $(SRC_TARGET_DIR))
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
